@@ -1,0 +1,14 @@
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 1em;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
