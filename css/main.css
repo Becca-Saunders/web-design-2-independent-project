@@ -12,15 +12,28 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+  grid-template-areas:
+  "header header";
+}
+
 img {
   width: 100%;
-
+  position: absolute;
   margin: 0;
 }
 
 header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-area: "header";
   margin: 0;
   padding: 0;
+  background-image: url("../images/Artboard 1.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
 }
 
 nav {
@@ -28,6 +41,8 @@ nav {
   justify-content: center;
   text-align: center;
   position: relative;
+  grid-row: 1;
+  grid-column: 2/-1;
 }
 
 li {
@@ -52,4 +67,13 @@ a:hover {
   border-width: thin;
   border-radius: 7px;
   color: #5d497c;
+}
+
+h1 {
+  grid-column: 1/-1;
+  z-index: 1;
+  margin-left: 1rem;
+  padding-top: 5rem;
+  text-align: center;
+  padding-bottom: 5rem;
 }
