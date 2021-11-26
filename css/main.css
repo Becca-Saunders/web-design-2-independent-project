@@ -30,19 +30,19 @@ header {
   grid-area: "header";
   margin: 0;
   padding: 0;
-  background-image: url("../images/Artboard 1.svg");
+  background-image: url("../images/another-header1.png");
   background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover;
+  background-position: center center;
+  background-size: 225% auto;
+  width: 100%;
+  height: 400px;
 }
 
 nav {
   display: flex;
   justify-content: center;
   text-align: center;
-  position: relative;
-  grid-row: 1;
-  grid-column: 2/-1;
+  grid-row: 1/-1;
 }
 
 li {
@@ -59,14 +59,20 @@ a {
   padding-top: .5em;
   padding-bottom: .5em;
   font-size: 1em;
-  color: #79639e;
+  color: black;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 7px;
+  color: black;
 }
 
 a:hover {
   border-style: solid;
   border-width: thin;
   border-radius: 7px;
-  color: #5d497c;
+  border-color: black;
+  background-color: black;
+  color: #f0dbce;
 }
 
 h1 {
