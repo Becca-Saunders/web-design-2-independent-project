@@ -102,3 +102,31 @@ main {
 .intro-p {
   margin-top: .5rem;
 }
+
+.links {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+}
+
+.card1 {
+  background-color: lavender;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  border-color: lavender;
+  border-radius: 10px;
+}
+
+.card2 {
+  background-color: lavender;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  border-color: lavender;
+  border-radius: 10px;
+}
+
+h3 {
+  font-weight: normal;
+}
