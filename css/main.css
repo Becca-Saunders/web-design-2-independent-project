@@ -112,21 +112,76 @@ main {
 .card1 {
   background-color: lavender;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   text-align: center;
-  border-color: lavender;
   border-radius: 10px;
+  background-image: url("../images/card background@2x.png");
+  background-size: 110% auto;
 }
 
 .card2 {
   background-color: lavender;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   text-align: center;
   border-color: lavender;
   border-radius: 10px;
+  background-image: url("../images/card background@2x.png");
+  background-size: 110% auto;
 }
 
 h3 {
   font-weight: normal;
+}
+
+@media only screen and (min-width: 38em) {
+
+  h1{
+    margin-left: 5rem;
+  }
+
+  main {
+    margin: 5rem;
+    margin-top: 0;
+  }
+
+  .links{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+}
+
+@media only screen and (min-width: 62.5em) {
+
+  h1{
+    margin-left: 5rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-areas:
+    "intro card1"
+    "intro card2";
+  }
+
+  .intro {
+    grid-area: intro;
+  }
+
+  .links {
+    display: grid;
+    grid-template-columns: 1fr
+  }
+
+  .card1 {
+    display: grid;
+    grid-area: card1;
+  }
+
+  .card2 {
+    display: grid;
+    grid-area: card2;
+  }
 }
