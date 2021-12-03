@@ -48,6 +48,7 @@ nav {
 }
 
 
+
 li {
   list-style-type: none;
   display: inline;
@@ -155,8 +156,18 @@ footer {
 
 /* Movements*/
 
-.move-list {
+.movements-list {
   border-style: none;
+  display: flex;
+}
+
+.movements-list:hover{
+  background-color: #f0dbce;
+  color: black;
+}
+
+.move-main {
+  grid: none;
 }
 
 @media only screen and (min-width: 38em) {
@@ -186,7 +197,7 @@ footer {
 @media only screen and (min-width: 62.5em) {
 
   h1{
-    margin-left: 15rem;
+    margin-left: 5rem;
   }
 
   main {
@@ -195,7 +206,7 @@ footer {
     "intro card1"
     "intro card2";
 
-    margin: 2.5em 15em;
+    margin: 2.5em 5rem;
   }
 
   .intro {
@@ -237,4 +248,11 @@ footer {
 
 @media only screen and (min-width: 92em ) {
 
+  main {
+    margin-left: 10rem;
+  }
+
+  h1{
+    margin-left: 10rem;
+  }
 }
