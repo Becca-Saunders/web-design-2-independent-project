@@ -47,6 +47,7 @@ nav {
   grid-column: 1/-1;
 }
 
+
 li {
   list-style-type: none;
   display: inline;
@@ -150,6 +151,12 @@ footer {
 
 .learn-more {
   padding-bottom: 1em;
+}
+
+/* Movements*/
+
+.move-list {
+  border-style: none;
 }
 
 @media only screen and (min-width: 38em) {
