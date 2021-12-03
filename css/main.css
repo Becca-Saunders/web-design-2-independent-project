@@ -156,18 +156,11 @@ footer {
 
 /* Movements*/
 
-.movements-list {
-  border-style: none;
-  display: flex;
-}
-
-.movements-list:hover{
-  background-color: #f0dbce;
-  color: black;
-}
-
-.move-main {
-  grid: none;
+.move-quote {
+  font-size: 2em;
+  line-height: 1.25em;
+  color: #695784;
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 38em) {
