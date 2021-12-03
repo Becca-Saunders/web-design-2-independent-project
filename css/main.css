@@ -41,7 +41,8 @@ header {
 nav {
   margin-top: 1em;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
   grid-row: 1/-1;
   grid-column: 1/-1;
@@ -51,8 +52,7 @@ nav {
 
 li {
   list-style-type: none;
-  display: inline;
-  margin: 2em;
+  display: inline-block;
 }
 
 a {
