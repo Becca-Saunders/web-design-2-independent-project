@@ -31,7 +31,7 @@ header {
   margin-bottom: 1rem;
   padding: 0;
   background-color: lavender;
-  background-image: url("../images/another-header1.png");
+  background-image: url("../art-images/another-header1.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 225% auto;
@@ -129,7 +129,7 @@ main {
   text-align: center;
   border-color: lavender;
   border-radius: 10px;
-  background-image: url("../art-images/images/card-background-purple.jpg");
+  background-image: url("../art-images/card-background-purple.jpg");
   background-size: 110% auto;
 }
 
