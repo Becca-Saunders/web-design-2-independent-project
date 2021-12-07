@@ -118,7 +118,7 @@ main {
   padding-bottom: 3rem;
   text-align: center;
   border-radius: 10px;
-  background-image: url("../images/card background@2x.png");
+  background-image: url("../art-images/images/card-background-purple.jpg");
   background-size: 110% auto;
 }
 
@@ -129,7 +129,7 @@ main {
   text-align: center;
   border-color: lavender;
   border-radius: 10px;
-  background-image: url("../images/card background@2x.png");
+  background-image: url("../art-images/images/card-background-purple.jpg");
   background-size: 110% auto;
 }
 
