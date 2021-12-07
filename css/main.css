@@ -19,8 +19,7 @@ body {
 }
 
 img {
-  width: 100%;
-  position: absolute;
+  width: auto;
   margin: 0;
 }
 
@@ -29,6 +28,7 @@ header {
   grid-template-columns: 1fr 1fr;
   grid-area: "header";
   margin: 0;
+  margin-bottom: 1rem;
   padding: 0;
   background-color: lavender;
   background-image: url("../images/another-header1.png");
@@ -172,6 +172,7 @@ footer {
     border-width: thin;
     border-radius: 7px;
     color: black;
+    margin-top: auto;
   }
 
   .learn-move:hover {
@@ -186,20 +187,23 @@ footer {
 .section-move {
   border-top: 10px solid #695784;
   padding-bottom: 2rem;
-  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 /*Paintings*/
-
-.move-paintings img {
-  max-width: 50px;
-
-/*
+.section-paintings {
   display: grid;
   grid-template-columns: 1fr;
-  grid-row: 1fr 1fr 1fr;
-*/
+  grid-gap: 1em;
+}
 
+
+.div-paintings {
+  border-top: 7px solid #695784;
+  padding-top: .5rem;
+  padding-left: 1rem;
+  padding-bottom: .5rem;
 }
 
 
