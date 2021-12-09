@@ -12,6 +12,20 @@ html {
   box-sizing: inherit;
 }
 
+.skip-links {
+  position: absolute;
+  top: -6em;
+}
+
+.skip-links a {
+  position: absolute;
+  top: -2em;
+}
+
+.skip-links a:focus {
+  top: 5em;
+}
+
 body {
   margin: 0;
   grid-template-areas:
@@ -26,12 +40,12 @@ img {
 header {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-area: "header";
+  grid-area: header;
   margin: 0;
   margin-bottom: 1rem;
   padding: 0;
   background-color: lavender;
-  background-image: url("../images/another-header-final.svg");
+  background-image: url("../images/header-image.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 225% auto;
@@ -48,8 +62,6 @@ nav {
   grid-column: 1/-1;
 }
 
-
-
 li {
   list-style-type: none;
   display: inline-block;
@@ -57,14 +69,13 @@ li {
 
 a {
   text-decoration: none;
-  background-color:	transparent;
+  background-color: transparent;
   padding: .5rem;
   font-size: 1em;
   color: black;
   border-style: solid;
   border-width: thin;
   border-radius: 7px;
-  color: black;
 }
 
 a:hover {
@@ -85,7 +96,7 @@ h1 {
   padding-bottom: 5rem;
 }
 
-.p1-title{
+.p1-title {
   text-align: left;
   font-weight: 300;
   line-height: 2rem;
@@ -118,7 +129,7 @@ main {
   padding-bottom: 3rem;
   text-align: center;
   border-radius: 10px;
-  background-image: url("../art-images/images/card-background-purple.jpg");
+  background-image: url("../images/card-background-purple.jpg");
   background-size: 110% auto;
 }
 
@@ -129,7 +140,7 @@ main {
   text-align: center;
   border-color: lavender;
   border-radius: 10px;
-  background-image: url("../art-images/card-background-purple.jpg");
+  background-image: url("../images/card-background-purple.jpg");
   background-size: 110% auto;
 }
 
@@ -154,7 +165,7 @@ footer {
   padding-bottom: 1em;
 }
 
-/* Movements*/
+/* Movements */
 
 .move-quote {
   font-size: 2em;
@@ -163,25 +174,25 @@ footer {
   font-weight: bold;
 }
 
-.learn-move{
-    text-decoration: none;
-    background-color:	transparent;
-    padding: .5rem;
-    font-size: 1em;
-    border-style: solid;
-    border-width: thin;
-    border-radius: 7px;
-    color: black;
-    margin-top: auto;
-  }
+.learn-move {
+  text-decoration: none;
+  background-color: transparent;
+  padding: .5rem;
+  font-size: 1em;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 7px;
+  color: black;
+  margin-top: auto;
+}
 
-  .learn-move:hover {
-    border-style: solid;
-    border-width: thin;
-    border-radius: 7px;
-    border-color: #695784;
-    background-color: #695784;
-    color: #f0dbce;
+.learn-move:hover {
+  border-style: solid;
+  border-width: thin;
+  border-radius: 7px;
+  border-color: #695784;
+  background-color: #695784;
+  color: #f0dbce;
 }
 
 .section-move {
@@ -191,13 +202,13 @@ footer {
   flex-direction: column;
 }
 
-/*Paintings*/
+/* Paintings */
+
 .section-paintings {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1em;
 }
-
 
 .div-paintings {
   border-top: 7px solid #695784;
@@ -206,10 +217,9 @@ footer {
   padding-bottom: .5rem;
 }
 
-
 @media only screen and (min-width: 38em) {
 
-  h1{
+  h1 {
     margin-left: 5rem;
   }
 
@@ -218,7 +228,7 @@ footer {
     margin-top: 0;
   }
 
-  .links{
+  .links {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -227,38 +237,35 @@ footer {
     margin-right: 0;
   }
 
-/* movements*/
+  /* movements */
 
   .main-move {
     grid-template: none;
     grid-gap: 2rem;
   }
 
-
 }
-
 
 @media only screen and (min-width: 62.5em) {
 
-  h1{
+  h1 {
     margin-left: 5rem;
   }
 
   main {
     display: grid;
     grid-template-areas:
-    "intro card1"
-    "intro card2";
-
+      "intro card1"
+      "intro card2";
   }
 
   .intro {
     grid-area: intro;
   }
 
-.intro-p {
-  margin-right: 4.5em;
-}
+  .intro-p {
+    margin-right: 4.5em;
+  }
 
   .links {
     display: grid;
@@ -273,7 +280,6 @@ footer {
     align-items: center;
     padding-left: 4em;
     padding-right: 4em;
-
   }
 
   .card2 {
@@ -288,33 +294,32 @@ footer {
     padding-bottom: .5em;
   }
 
-/* movements*/
+  /* movements */
 
   .main-move {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-
 }
 
-@media only screen and (min-width: 92em ) {
+@media only screen and (min-width: 92em) {
 
   main {
     margin-left: 10rem;
   }
 
-  h1{
+  h1 {
     margin-left: 2rem;
   }
 
-  /* movements*/
+  /* movements */
 
   .main-move {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: 2rem;
     grid-gap: 2rem;
+   }
 
-  }
 }
