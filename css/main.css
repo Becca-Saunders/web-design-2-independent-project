@@ -213,8 +213,12 @@ footer {
 .div-paintings {
   border-top: 7px solid #695784;
   padding-top: .5rem;
-  padding-left: 1rem;
+  padding-left: 2rem;
   padding-bottom: .5rem;
+}
+
+.move-paintings {
+  width: 22em;
 }
 
 @media only screen and (min-width: 38em) {
@@ -223,7 +227,7 @@ footer {
     margin-left: 5rem;
   }
 
-  main {
+  .main-one {
     margin: 5rem;
     margin-top: 0;
   }
@@ -244,6 +248,21 @@ footer {
     grid-gap: 2rem;
   }
 
+  /* paintings */
+
+  .section-paintings {
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
+
+  .main-paintings {
+    margin-right: 1rem;
+  }
+
+  .move-paintings {
+    width: 25em;
+  }
+
 }
 
 @media only screen and (min-width: 62.5em) {
@@ -252,7 +271,7 @@ footer {
     margin-left: 5rem;
   }
 
-  main {
+  .main-one {
     display: grid;
     grid-template-areas:
       "intro card1"
@@ -301,11 +320,24 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 
+  /* paintings */
+
+  .section-paintings {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 1em;
+  }
+
+  .move-paintings {
+    width: 125px;
+    float: left;
+  }
+
 }
 
 @media only screen and (min-width: 92em) {
 
-  main {
+  .main-one {
     margin-left: 10rem;
   }
 
@@ -320,6 +352,13 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: 2rem;
     grid-gap: 2rem;
+  }
+
+  /* paintings */
+
+  .move-paintings {
+    width: 200px;
+    float: left;
   }
 
 }
