@@ -28,8 +28,7 @@ html {
 
 body {
   margin: 0;
-  grid-template-areas:
-  "header header";
+  grid-template-areas: "header header";
 }
 
 img {
